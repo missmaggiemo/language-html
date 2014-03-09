@@ -65,6 +65,21 @@
   'Comment':
     'prefix': 'comment'
     'body': '<!-- $1 -->'
+  'Header1':
+    'prefix': 'h1'
+    'body': '<h1>$1</h1>'
+  'Header2':
+    'prefix': 'h2'
+    'body': '<h2>$1</h2>'
+  'Header3':
+    'prefix': 'h3'
+    'body': '<h3>$1</h3>'
+  'Ul':
+    'prefix': 'ul'
+    'body': '<ul${1: id="${2:name}"}>\n\t$3\n</ul>'
+  'Li':
+    'prefix': 'li'
+    'body': '<li${1: id="${2:name}"}>\n\t$3\n</li>'  
 '.text.html:not(.meta.tag)':
   'Body':
     'prefix': 'body'
