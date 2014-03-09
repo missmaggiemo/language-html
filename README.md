@@ -1,4 +1,8 @@
-# HTML language support in Atom
+## This is my clone of the language-html repo for Atom text editor.
+
+# Original README:
+
+### HTML language support in Atom
 
 Adds syntax highlighting and snippets to HTML files in Atom.
 
