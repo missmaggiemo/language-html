@@ -1,5 +1,5 @@
-This is my clone of the language-html repo for Atom text editor.
----------------------------------------------------------------------
+### This is my clone of the language-html repo for Atom text editor.
+---
 
 # Original README:
 
