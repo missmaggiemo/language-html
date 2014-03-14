@@ -10,7 +10,7 @@
     'body': '<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>'
   'Div':
     'prefix': 'div'
-    'body': '<div${1: id="${2:name}"}>\n\t$3\n</div>'
+    'body': '<div${1: class="${2:name}"} ${3: id="${4:name}"}>\n\t$5\n</div>'
   'Input':
     'prefix': 'input'
     'body': '<input type="${1:button}" name="${2:some_name}" value="$3">'
@@ -79,11 +79,24 @@
     'body': '<ul${1: id="${2:name}"}>\n\t$3\n</ul>'
   'Li':
     'prefix': 'li'
-    'body': '<li${1: id="${2:name}"}>\n\t$3\n</li>'  
+    'body': '<li${1: id="${2:name}"}>\n\t$3\n</li>'
+  'Table':
+    'prefix': 'table'
+    'body': '<table${1: class="${2:name}"}>\n\t$3\n</table>'
+  'Table_Row':
+    'prefix': 'tr'
+    'body': '<tr${1: id="${2:name}"}>\n\t$3\n</tr>'
+  'Table_Cell':
+    'prefix': 'td'
+    'body': '<td${1: id="${2:name}"}>\n\t$3\n</td>'
+
 '.text.html:not(.meta.tag)':
   'Body':
     'prefix': 'body'
     'body': '<body id="${1:id}"${2: onload="$3"}>\n\t$4\n</body>'
+  'Head':
+    'prefix': 'head'
+    'body': '<head>\n\t$1\n</head>'
 '.text.html:not(.text.blog)':
   'Title':
     'prefix': 'title'
